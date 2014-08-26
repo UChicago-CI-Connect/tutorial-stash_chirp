@@ -1,0 +1,9 @@
+universe = vanilla
+notification=never
+executable = ./run_job.py
+output = logs/data_$(Cluster).$(Process).out
+error = logs/data_$(Cluster).$(Process).err
+log = logs/data.log
+ShouldTransferFiles = YES
+when_to_transfer_output = ON_EXIT
+queue 100
